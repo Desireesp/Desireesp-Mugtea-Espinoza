@@ -71,55 +71,55 @@ header ul li a a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   width: 100%;
   margin-top: 50px;
 }
 
 main {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
+  -ms-grid-template-row: 2;
+  -ms-grid-template-column: 1;
   background-color: #fff;
   grid-area: main;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 main #title {
   margin-top: 70px;
 }
 main .title {
   font-family: "Poppins", sans-serif;
+  text-align: center;
   letter-spacing: 1px;
   font-size: 11px;
   margin-top: 30px;
   margin-bottom: 60px;
-  text-align: center;
 }
 main .titleh1 {
-  color: #000;
-  font-size: 30px;
   font-family: "Poppins", sans-serif;
   text-align: center;
+  color: #000;
+  font-size: 30px;
   font-style: normal;
   font-weight: 600;
   margin-top: 20px;
@@ -149,16 +149,16 @@ main .titleh1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin: 10px;
   text-align: center;
 }
@@ -214,20 +214,20 @@ footer {
 }
 
 .nosotros {
-  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  width: 80%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -280,7 +280,121 @@ footer {
     margin: 0px;
   }
 }
-.social > a {
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 40%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.menu-txt {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  width: 60%;
+  margin: auto;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.menu h2 {
+  color: #4ecdc4;
+}
+
+.precio {
+  font-weight: bold;
+}
+
+.blog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 60%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.blog .blog-txt {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  float: left;
+}
+.blog .blog-txt img {
+  width: 400px;
+  border: 1px solid #000;
+  float: left;
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+.blog .blog-txt p {
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  width: 80%;
+}
+
+.contacto {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.contacto h1 {
+  padding-bottom: 30px;
+}
+
+.input .input_form {
+  margin-top: 10px;
+  width: 60%;
+  height: 40px;
+  font-family: "Poppins", sans-serif;
+  padding-left: 10px;
+}
+.input .input_mensaje {
+  margin-top: 20px;
+  width: 60%;
+  height: 120px;
+  font-family: "Poppins", sans-serif;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.input .input_enviar {
+  margin-top: 10px;
+  width: 30%;
+  height: 50px;
+  background-color: #ddfbf9;
+  font-family: "Poppins", sans-serif;
+}
+
+footer .social > a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -297,140 +411,8 @@ footer {
   transition: 0.4s;
   color: #000 !important;
 }
-
-.social > a:hover {
+footer .social > a:hover {
   -webkit-transform: translateY(-10px);
           transform: translateY(-10px);
   color: #4ecdc4 !important;
-}
-
-.menu {
-  width: 40%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.menu-txt {
-  width: 60%;
-  margin: auto;
-  padding-bottom: 30px;
-  padding-top: 30px;
-  font-family: "Poppins", sans-serif;
-  font-size: 12px;
-  letter-spacing: 1px;
-  text-align: center;
-}
-
-.menu h2 {
-  color: #4ecdc4;
-}
-
-.precio {
-  font-weight: bold;
-}
-
-.blog {
-  width: 40%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.blog {
-  width: 60%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.blog-txt {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 30px;
-  padding-top: 30px;
-  float: left;
-}
-
-.blog-txt img {
-  width: 400px;
-  border: 1px solid #000;
-  float: left;
-  margin-right: 30px;
-  margin-bottom: 20px;
-}
-
-.blog-txt p {
-  letter-spacing: 1px;
-  margin-bottom: 10px;
-  margin-right: 20px;
-  text-align: left;
-  font-family: "Poppins", sans-serif;
-  font-size: 12px;
-  width: 80%;
-}
-
-.contacto {
-  width: 60%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-
-.contacto h1 {
-  padding-bottom: 30px;
-}
-
-.input_form {
-  margin-top: 10px;
-  width: 60%;
-  height: 40px;
-  font-family: "Poppins", sans-serif;
-  padding-left: 10px;
-}
-
-.input_mensaje {
-  margin-top: 20px;
-  width: 60%;
-  height: 120px;
-  font-family: "Poppins", sans-serif;
-  padding-left: 10px;
-  padding-top: 10px;
-}
-
-.input_enviar {
-  margin-top: 10px;
-  width: 30%;
-  height: 50px;
-  background-color: #ddfbf9;
-  font-family: "Poppins", sans-serif;
-}
-
-.navbar_header {
-  margin-bottom: 30px;
-  margin-top: 30px;
 }

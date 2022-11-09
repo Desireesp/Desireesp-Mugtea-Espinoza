@@ -1,4 +1,5 @@
 @import "./base/_reset";
+@import "./utilities/_mixins";
   
   body {
     margin: 0;
@@ -37,7 +38,7 @@
       text-transform: uppercase;
       font-weight:600;
       }
-      
+
       .navbar-nav .nav-link:hover{
         color: #4ecdc4 !important;
       }
@@ -66,10 +67,7 @@
   
 
   .logo{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex;
     width:100%;
     margin-top:50px;
     
@@ -79,29 +77,24 @@
   main{
     background-color:#fff;
     grid-area: main;
-    display:flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items: center;
+    @include flex;
 
     #title{
         margin-top:70px;
       }
       
       .title{
-        font-family: 'Poppins', sans-serif;
+        @include font;
         letter-spacing:1px;
         font-size:11px;
         margin-top:30px;
         margin-bottom:60px;
-        text-align:center;
       }
 
       .titleh1{ 
+        @include font;
         color: #000;
         font-size: 30px;
-        font-family: 'Poppins', sans-serif;
-        text-align: center;
         font-style: normal;
         font-weight: 600;
         margin-top:20px;
@@ -133,10 +126,7 @@
       }
       
       .cards{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flex;
         margin: 10px;
         text-align: center;
       
@@ -165,8 +155,6 @@
       }
 
   }
-  
-
   
   
   footer{
@@ -202,11 +190,8 @@
   }
   
   .nosotros{
+    @include flex;
     width:80%;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
     img{
       width:50%;
@@ -271,44 +256,22 @@
     
   }
   
-  
-  
-  .social >a{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    cursor:pointer;
-    text-decoration: none;
-    margin:10px;
-    transition: 0.4s;
-    color:#000 !important;
-  }
-  
-  
-  .social >a:hover{
-   transform:translateY(-10px);
-   color: #4ecdc4 !important;
-  }
-  
+
   
   .menu{
+    @include flex;
      width:40%;
-     display:flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
      flex-wrap: wrap;
   }
   
   .menu-txt{
+     @include font;
      width:60%;
      margin:auto;
      padding-bottom: 30px;
      padding-top: 30px;
-     font-family:'Poppins', sans-serif;
      font-size:12px;
      letter-spacing:1px;
-     text-align:center;
   }
   
   .menu h2{
@@ -320,85 +283,93 @@
   }
   
   .blog{
-     width:40%;
-     display:flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
+    @include flex;
+     width:60%;
      flex-wrap: wrap;
-  }
-  
-  .blog{
-     width: 60%;
-     margin-left:auto;
-     margin-right:auto;
-  }
-  
-  .blog-txt{
-     width: 100%;
-     margin-left: auto;
-     margin-right: auto;
-     padding-bottom: 30px;
-     padding-top: 30px;
-     float: left;
-  }
-  
-  .blog-txt img{
-     width:400px;
-     border: 1px solid #000;
-     float: left;
-     margin-right: 30px;
-     margin-bottom: 20px;
-  }
-  
-  .blog-txt p{
-     letter-spacing: 1px;
-     margin-bottom: 10px;
-     margin-right: 20px;
-     text-align: left;
-     font-family:'Poppins', sans-serif;
-     font-size:12px;
-     width: 80%;
-  }
+
+        .blog-txt{
+          width: 100%;
+          margin-left: auto;
+          margin-right: auto;
+          padding-bottom: 30px;
+          padding-top: 30px;
+          float: left;
+
+          img{
+            width:400px;
+            border: 1px solid #000;
+            float: left;
+            margin-right: 30px;
+            margin-bottom: 20px;
+        }
+        
+        p{
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+            margin-right: 20px;
+            text-align: left;
+            font-family:'Poppins', sans-serif;
+            font-size:12px;
+            width: 80%;
+        }
+ }
+
+}
   
   .contacto{
     width: 60%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+
+    h1{
+      padding-bottom: 30px;
+    }
   }
-  
-  .contacto h1{
-    padding-bottom: 30px;
+
+  .input{
+    .input_form{
+      margin-top: 10px;
+      width: 60%;
+      height: 40px;
+      font-family:'Poppins', sans-serif;
+      padding-left: 10px;
+    }
+    
+    .input_mensaje{
+      margin-top: 20px;
+      width: 60%;
+      height: 120px;
+      font-family:'Poppins', sans-serif;
+      padding-left: 10px;
+      padding-top: 10px;
+    }
+    
+    .input_enviar{
+      margin-top: 10px;
+      width: 30%;
+      height: 50px;
+      background-color:#ddfbf9;
+      font-family:'Poppins', sans-serif;
+    }
+
   }
-  
-  .input_form{
-    margin-top: 10px;
-    width: 60%;
-    height: 40px;
-    font-family:'Poppins', sans-serif;
-    padding-left: 10px;
+
+  footer{
+    .social >a{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      cursor:pointer;
+      text-decoration: none;
+      margin:10px;
+      transition: 0.4s;
+      color:#000 !important;
+    }
+    
+    .social >a:hover{
+     transform:translateY(-10px);
+     color: #4ecdc4 !important;
+    }
+    
   }
-  
-  .input_mensaje{
-    margin-top: 20px;
-    width: 60%;
-    height: 120px;
-    font-family:'Poppins', sans-serif;
-    padding-left: 10px;
-    padding-top: 10px;
-  }
-  
-  .input_enviar{
-    margin-top: 10px;
-    width: 30%;
-    height: 50px;
-    background-color:#ddfbf9;
-    font-family:'Poppins', sans-serif;
-  }
-  
-  .navbar_header{
-    margin-bottom: 30px;
-    margin-top: 30px;
-  }
-  
